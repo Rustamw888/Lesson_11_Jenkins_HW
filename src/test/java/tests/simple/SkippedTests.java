@@ -14,7 +14,7 @@ public class SkippedTests {
     }
 
     @Test
-    @Disabled
+    @Disabled("Some reason")
     public void test01() {
         assertTrue(false);
     }
