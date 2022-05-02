@@ -30,5 +30,6 @@ public class TestBase {
         Attach.pageSource();
         Attach.attachAsText("Text", "test text");
         Attach.browserConsoleLogs();
+        Attach.addVideo();
     }
 }
