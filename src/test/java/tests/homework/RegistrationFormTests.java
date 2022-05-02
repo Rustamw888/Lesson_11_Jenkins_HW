@@ -1,9 +1,5 @@
 package tests.homework;
 
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -16,13 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Tag("demoqa")
-public class RegistrationFormTests {
-
-    @BeforeAll
-    public static void setUp() {
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserSize = "1980x1080";
-    }
+public class RegistrationFormTests extends TestBase {
 
     @Test
     @DisplayName("Successful fill registration test")
